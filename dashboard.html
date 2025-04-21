@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Redirect</title>
+    <script>
+        // Example: After login, redirect to either admin or user dashboard
+        function redirectToDashboard() {
+            const userRole = "admin"; // This would be determined by your back-end
+            if (userRole === "admin") {
+                window.location.href = "admin_dashboard.html";
+            } else {
+                window.location.href = "user_dashboard.html";
+            }
+        }
+    </script>
+</head>
+<body onload="redirectToDashboard()">
+    <p>Redirecting to your dashboard...</p>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .nav-links li {
+            margin-left: 20px;
+        }
+
+        nav .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav .nav-links a:hover {
+            color: #f39c12;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .grid-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-view .team-member {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .grid-view .team-member img {
+            width: 100px;
+            height: 200px;
+            border-radius: 30%;
+            margin-bottom: 10px;
+        }
+
+        .grid-view .team-member h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .grid-view .team-member p {
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    
+        <div class="logo">VehicleTransfer</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="car listings.html">Car Listings</a></li>
+            <li><a href="transfer process.html">Transfer Process</a></li>
+            <li><a href="support team.html">Support Team</a></li>
+            <li><a href="sign in&sign up.html">Login</a></li>
+            <li><a href="admin Dashboard.html">admin dashboard</a></li>
+            <li><a href="User Dashboard.html">user dashboard</a></li>
+        </ul>
+    </nav>
+</nav>
+
+<div class="container">
+    <h1>Support Team</h1>
+    <div class="content">
+        <h2>Meet Our Support Team</h2>
+        <div class="grid-view">
+            <div class="team-member">
+                <img src="isimbi.jpg" alt="isimbi">
+                <h3>isimbi</h3>
+                <p><strong>Role:</strong> Customer Support Manager</p>
+                <p><strong>Email:</strong> isimbisyl@gmail.com.com</p>
+                <p><strong>Phone:</strong> (+250) 0787202818</p>
+            </div>
+            <div class="team-member">
+                <img src="gaella.jpg" alt="gaella">
+                <h3>gaella</h3>
+                <p><strong>Role:</strong> Technical Support Specialist</p>
+                <p><strong>Email:</strong> gael@gmail.com</p>
+                <p><strong>Phone:</strong> (+250) 0787204567</p>
+            </div>
+            <div class="team-member">
+                <img src="robert.jpeg" alt="robert">
+                <h3>robert</h3>
+                <p><strong>Role:</strong> Sales Support Representative</p>
+                <p><strong>Email:</strong> robert@gmail.com</p>
+                <p><strong>Phone:</strong> (+250) 0787987647</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 VehicleTransfer. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

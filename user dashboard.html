@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 1em;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            padding: 2em;
+            border-bottom: 1px solid #ccc;
+            background-color: #fff;
+            margin: 1em;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 1em;
+            margin-bottom: 1em;
+            background-color: #e7f7e0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fafafa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1em;
+        }
+
+        td {
+            padding: 1em;
+            text-align: left;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">VehicleTransfer</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="car listings.html">Car Listings</a></li>
+            <li><a href="transfer process.html">Transfer Process</a></li>
+            <li><a href="support team.html">Support Team</a></li>
+            <li><a href="sign in&sign up.html">Login</a></li>
+            <li><a href="admin Dashboard.html">admin dashboard</a></li>
+            <li><a href="User Dashboard.html">user dashboard</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>User Dashboard</h1>
+    </header>
+
+    <section id="overview">
+        <h2>Sales Overview</h2>
+        <div class="card">
+            <h3>Total Sales</h3>
+            <p>$15,000</p>
+        </div>
+        <div class="card">
+            <h3>Recent Sales</h3>
+            <ul>
+                <li>Car A - $5,000</li>
+                <li>Car B - $10,000</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="history">
+        <h2>Transaction History</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Car</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>2024-08-10</td>
+                <td>Car A</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>2024-08-09</td>
+                <td>Car B</td>
+                <td>$10,000</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="profile">
+        <h2>Profile Management</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="John Doe">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="johndoe@example.com">
+            <button type="submit">Update</button>
+        </form>
+    </section>
+
+    <section id="support">
+        <h2>Support</h2>
+        <form>
+            <label for="issue">Describe your issue:</label>
+            <textarea id="issue" name="issue"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vehicle Transfer Management</p>
+    </footer>
+</body>
+</html>

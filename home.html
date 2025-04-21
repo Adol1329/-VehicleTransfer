@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Transfer Management System</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .nav-links li {
+            margin-left: 20px;
+        }
+
+        nav .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav .nav-links a:hover {
+            color: #f39c12;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('1.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+            background-color: #f7f7f7;
+        }
+
+        .features .feature-item {
+            background-color: darkslategray;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .features .feature-item:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .features .feature-item h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .features .feature-item p {
+            font-size: 1em;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">VehicleTransfer</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="car listings.html">Car Listings</a></li>
+            <li><a href="transfer process.html">Transfer Process</a></li>
+            <li><a href="support team.html">Support Team</a></li>
+            <li><a href="sign in&sign up.html">Login</a></li>
+            <li><a href="admin Dashboard.html">admin dashboard</a></li>
+            <li><a href="User Dashboard.html">user dashboard</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your One-Stop Solution for Car Sales and Transfers</h1>
+        <p>Buy, sell, and transfer vehicles with ease and security.</p>
+        
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="feature-item">
+            <h2>Wide Range of Cars</h2>
+            <p>Explore a diverse selection of vehicles from trusted sellers.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Seamless Transfer Process</h2>
+            <p>Our platform guides you through each step of the transfer process.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Secure Transactions</h2>
+            <p>We ensure your transactions are safe and protected.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VehicleTransfer. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll to Features Section
+        function scrollToFeatures() {
+            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

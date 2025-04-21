@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Process</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .nav-links li {
+            margin-left: 20px;
+        }
+
+        nav .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav .nav-links a:hover {
+            color: #f39c12;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .list-view {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-view .item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f7f7f7;
+        }
+
+        .list-view .item img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .list-view .item h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .list-view .item p {
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+ <nav>
+        <div class="logo">VehicleTransfer</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="car listings.html">Car Listings</a></li>
+            <li><a href="transfer process.html">Transfer Process</a></li>
+            <li><a href="support team.html">Support Team</a></li>
+            <li><a href="sign in&sign up.html">Login</a></li>
+            <li><a href="admin Dashboard.html">admin dashboard</a></li>
+            <li><a href="User Dashboard.html">user dashboard</a></li>
+        </ul>
+    </nav>
+
+<div class="container">
+    <h1>Transfer Process</h1>
+    <div class="content">
+        <h2>Step-by-Step Guide</h2>
+        <ul class="list-view">
+            <li class="item">
+                <img src="step1.jpeg" alt="Step 1: Gather Documents">
+                <div>
+                    <h3><a href="step1-details.html">Step 1: Gather Documents</a></h3>
+                    <p>Gather required documents, including proof of ownership and identification.</p>
+                </div>
+            </li>
+            <li class="item">
+                <img src="step2.jpg" alt="Step 2: Complete Application">
+                <div>
+                    <h3><a href="step2-details.html">Step 2: Complete Application</a></h3>
+                    <p>Complete the transfer application form and provide all necessary details.</p>
+                </div>
+            </li>
+            <li class="item">
+                <img src="step3.jpeg" alt="Step 3: Submit Documents">
+                <div>
+                    <h3><a href="step3-details.html">Step 3: Submit Documents</a></h3>
+                    <p>Submit the form and documents to our office or via our online portal.</p>
+                </div>
+            </li>
+            <li class="item">
+                <img src="step4.jpg" alt="Step 4: Pay Fees">
+                <div>
+                    <h3><a href="step4-details.html">Step 4: Pay Fees</a></h3>
+                    <p>Pay any applicable fees. You will receive a confirmation of the transfer.</p>
+                </div>
+            </li>
+            <li class="item">
+                <img src="step5.jpeg" alt="Step 5: Processing">
+                <div>
+                    <h3><a href="step5-details.html">Step 5: Processing</a></h3>
+                    <p>Wait for the processing period. Once completed, you will receive the new registration details.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 VehicleTransfer. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

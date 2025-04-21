@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 1em;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            padding: 2em;
+            border-bottom: 1px solid #ccc;
+            background-color: #fff;
+            margin: 1em;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fdfdfd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        table, th, td {
+            border: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1em;
+        }
+
+        td {
+            padding: 1em;
+            text-align: left;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">VehicleTransfer</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="car listings.html">Car Listings</a></li>
+            <li><a href="transfer process.html">Transfer Process</a></li>
+            <li><a href="support team.html">Support Team</a></li>
+            <li><a href="sign in&sign up.html">Login</a></li>
+            <li><a href="admin Dashboard.html">admin dashboard</a></li>
+            <li><a href="User Dashboard.html">user dashboard</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+
+    <section id="manage-cars">
+        <h2>Manage Cars</h2>
+        <button>Add Car</button>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Car Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Car A</td>
+                <td>$5,000</td>
+                <td><button>Edit</button> <button>Delete</button></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="manage-users">
+        <h2>Manage Users</h2>
+        <button>Add User</button>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>johndoe</td>
+                <td>johndoe@example.com</td>
+                <td><button>Edit</button> <button>Delete</button></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="reports">
+        <h2>Generate Reports</h2>
+        <form>
+            <label for="report-type">Select Report Type:</label>
+            <select id="report-type" name="report-type">
+                <option value="sales">Sales Report</option>
+                <option value="users">User Report</option>
+            </select>
+            <button type="submit">Generate</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vehicle Transfer Management</p>
+    </footer>
+</body>
+</html>
