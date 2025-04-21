@@ -83,4 +83,4 @@ The application uses the following database tables:
 This project is developed for educational purposes. Please respect copyright and usage restrictions.
 
 ## Support
-For questions or support, please contact [adolpheuwayo12@gmail.com]
+For questions or support, please contact: adolpheuwayo12@gmail.com
